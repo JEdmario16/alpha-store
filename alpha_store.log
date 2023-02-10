@@ -1,0 +1,900 @@
+2023-02-10T03:24:28.096291-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:24:28.097293-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:24:28.098297-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:24:28.099293-0300 | INFO | App started | main.py:23
+2023-02-10T03:24:56.859126-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:24:56.860125-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:24:56.862124-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:24:56.862124-0300 | INFO | App started | main.py:24
+2023-02-10T03:25:55.432477-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:25:55.432477-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:25:55.433478-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:25:55.433478-0300 | INFO | App started | main.py:24
+2023-02-10T03:26:14.976962-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:26:14.976962-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:26:14.978963-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:26:14.979964-0300 | INFO | App started | main.py:24
+2023-02-10T03:27:43.325957-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:27:43.326958-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:27:43.327955-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:27:43.327955-0300 | INFO | App started | main.py:27
+2023-02-10T03:28:08.357010-0300 | INFO | Connected in alpha_store with app testing status: False | models.py:45
+2023-02-10T03:28:08.358010-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:28:08.360012-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:28:08.360012-0300 | INFO | App started | main.py:27
+2023-02-10T03:28:14.443440-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:28:14.443440-0300 | INFO | Auth models configured | models.py:51
+2023-02-10T03:28:14.445410-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:28:14.445410-0300 | INFO | App started | main.py:27
+2023-02-10T03:30:07.359815-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:30:28.597250-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:31:07.159922-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:31:07.160923-0300 | DEBUG | Database URI: <SQLAlchemy> | models.py:46
+2023-02-10T03:31:07.160923-0300 | INFO | Auth models configured | models.py:52
+2023-02-10T03:31:07.161922-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:31:07.162927-0300 | INFO | App started | main.py:27
+2023-02-10T03:31:48.124786-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:31:48.124786-0300 | DEBUG | Database URI: <SQLAlchemy> | models.py:46
+2023-02-10T03:31:48.124786-0300 | INFO | Auth models configured | models.py:52
+2023-02-10T03:31:48.126788-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:31:48.126788-0300 | INFO | App started | main.py:27
+2023-02-10T03:33:07.814976-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:33:07.815974-0300 | DEBUG | Database URI: <SQLAlchemy>, postgreesql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:46
+2023-02-10T03:33:07.815974-0300 | INFO | Auth models configured | models.py:53
+2023-02-10T03:33:07.818975-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:33:07.819978-0300 | INFO | App started | main.py:27
+2023-02-10T03:33:51.896904-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:45
+2023-02-10T03:33:51.897907-0300 | DEBUG | Database URI: <SQLAlchemy>, postgreesql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:46
+2023-02-10T03:33:51.897907-0300 | INFO | Auth models configured | models.py:53
+2023-02-10T03:33:51.898905-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:33:51.898905-0300 | INFO | App started | main.py:27
+2023-02-10T03:35:54.725335-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:35:54.726334-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:35:54.726334-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:35:54.727335-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:35:54.727335-0300 | INFO | App started | main.py:27
+2023-02-10T03:38:36.893876-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:38:36.893876-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:38:36.893876-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:38:36.895876-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:38:36.895876-0300 | INFO | App started | main.py:27
+2023-02-10T03:38:53.372653-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:38:53.373652-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:38:53.373652-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:38:53.374653-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:38:53.374653-0300 | INFO | App started | main.py:27
+2023-02-10T03:39:05.974021-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:39:05.974989-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:39:05.974989-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:39:05.976020-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:39:05.976020-0300 | INFO | App started | main.py:27
+2023-02-10T03:40:18.840320-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:40:18.840320-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:40:18.840320-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:40:18.842320-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:40:18.842320-0300 | INFO | App started | main.py:27
+2023-02-10T03:41:24.196379-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:41:24.196379-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:41:24.196379-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:41:24.197383-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:41:24.198384-0300 | INFO | App started | main.py:27
+2023-02-10T03:41:38.319335-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:41:38.320364-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:41:38.320364-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:41:38.321363-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:41:38.321363-0300 | INFO | App started | main.py:27
+2023-02-10T03:42:06.504924-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:42:06.505954-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:42:06.505954-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:42:06.506922-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:42:06.506922-0300 | INFO | App started | main.py:27
+2023-02-10T03:42:52.995043-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:42:52.996043-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:42:52.996043-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:42:52.997045-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:42:52.998044-0300 | INFO | App started | main.py:27
+2023-02-10T03:43:08.994313-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:43:08.994313-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:43:08.995312-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:43:08.996312-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:43:08.996312-0300 | INFO | App started | main.py:27
+2023-02-10T03:45:04.722575-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:45:04.722575-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:45:04.722575-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:45:04.724576-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:45:04.724576-0300 | INFO | App started | main.py:27
+2023-02-10T03:46:14.854713-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:46:14.854713-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:46:14.855700-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:46:14.856702-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:46:14.856702-0300 | INFO | App started | main.py:27
+2023-02-10T03:46:27.408432-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:46:27.409461-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:46:27.409461-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:46:27.410432-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:46:27.410432-0300 | INFO | App started | main.py:27
+2023-02-10T03:46:57.200525-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:46:57.200525-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:46:57.200525-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:46:57.202495-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:46:57.202495-0300 | INFO | App started | main.py:27
+2023-02-10T03:47:11.660486-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:47:11.661485-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:47:11.661485-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:47:11.666486-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:47:11.668484-0300 | INFO | App started | main.py:27
+2023-02-10T03:48:19.940633-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:48:19.940633-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:48:19.941635-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:48:19.942664-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:48:19.942664-0300 | INFO | App started | main.py:27
+2023-02-10T03:49:21.405598-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:49:21.405598-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:49:21.405598-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:49:21.406566-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:49:21.407596-0300 | INFO | App started | main.py:27
+2023-02-10T03:49:21.557571-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:49:21.558569-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:49:21.558569-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:49:21.559569-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:49:21.559569-0300 | INFO | App started | main.py:27
+2023-02-10T03:49:44.560088-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:49:44.561089-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:49:44.561089-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:49:44.562086-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:49:44.562086-0300 | INFO | App started | main.py:28
+2023-02-10T03:49:44.727084-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:49:44.727084-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:49:44.727084-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:49:44.728085-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:49:44.728085-0300 | INFO | App started | main.py:28
+2023-02-10T03:57:37.593355-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:57:37.593355-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:57:37.594357-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:57:37.595385-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:57:37.595385-0300 | INFO | App started | main.py:28
+2023-02-10T03:57:37.738357-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:57:37.739355-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:57:37.739355-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:57:37.740356-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:57:37.740356-0300 | INFO | App started | main.py:28
+2023-02-10T03:57:37.883359-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:57:37.883359-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:57:37.883359-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:57:37.885358-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:57:37.886359-0300 | INFO | App started | main.py:28
+2023-02-10T03:57:38.112356-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T03:57:38.113357-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T03:57:38.113357-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T03:57:38.114357-0300 | INFO | Auth configured | views.py:9
+2023-02-10T03:57:38.115364-0300 | INFO | App started | main.py:28
+2023-02-10T04:00:03.169163-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:00:03.169163-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:00:03.169163-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:00:03.170162-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:00:03.171189-0300 | INFO | App started | main.py:28
+2023-02-10T04:00:03.328164-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:00:03.329164-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:00:03.329164-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:00:03.330167-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:00:03.331163-0300 | INFO | App started | main.py:28
+2023-02-10T04:00:03.593160-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:00:03.593160-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:00:03.594160-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:00:03.595190-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:00:03.596161-0300 | INFO | App started | main.py:28
+2023-02-10T04:00:03.768161-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:00:03.768161-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:00:03.769162-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:00:03.772162-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:00:03.772162-0300 | INFO | App started | main.py:28
+2023-02-10T04:01:44.549287-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:01:44.550284-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:01:44.550284-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:01:44.552288-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:01:44.553287-0300 | INFO | App started | main.py:28
+2023-02-10T04:01:44.746284-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:01:44.746284-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:01:44.746284-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:01:44.748285-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:01:44.748285-0300 | INFO | App started | main.py:28
+2023-02-10T04:01:45.022284-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:01:45.022284-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:01:45.022284-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:01:45.024290-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:01:45.025287-0300 | INFO | App started | main.py:28
+2023-02-10T04:01:45.170286-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:01:45.170286-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:01:45.170286-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:01:45.172285-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:01:45.173283-0300 | INFO | App started | main.py:28
+2023-02-10T04:02:31.925130-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:02:31.926130-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:02:31.926130-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:02:31.928130-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:02:31.928130-0300 | INFO | App started | main.py:28
+2023-02-10T04:02:32.096133-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:02:32.097130-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:02:32.097130-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:02:32.098131-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:02:32.098131-0300 | INFO | App started | main.py:28
+2023-02-10T04:02:32.263133-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:02:32.263133-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:02:32.263133-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:02:32.264131-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:02:32.265134-0300 | INFO | App started | main.py:28
+2023-02-10T04:02:32.426132-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:02:32.427131-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:02:32.427131-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:02:32.429132-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:02:32.430134-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:08.657600-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:08.657600-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:08.658572-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:08.659569-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:08.659569-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:08.795634-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:08.795634-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:08.795634-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:08.796633-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:08.796633-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:08.920637-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:08.920637-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:08.920637-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:08.921638-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:08.922635-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:09.045687-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:09.046687-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:09.046687-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:09.048688-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:09.048688-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:19.952281-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:19.952281-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:19.952281-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:19.953285-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:19.954283-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:20.215590-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:20.216620-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:20.216620-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:20.217592-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:20.218593-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:20.344641-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:20.345641-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:20.345641-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:20.346645-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:20.346645-0300 | INFO | App started | main.py:28
+2023-02-10T04:03:20.584010-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:03:20.585011-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:03:20.585011-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:03:20.586011-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:03:20.586011-0300 | INFO | App started | main.py:28
+2023-02-10T04:04:54.058697-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:04:54.058697-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:04:54.058697-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:04:54.060701-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:04:54.060701-0300 | INFO | App started | main.py:28
+2023-02-10T04:04:54.245701-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:04:54.245701-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:04:54.245701-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:04:54.246699-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:04:54.247698-0300 | INFO | App started | main.py:28
+2023-02-10T04:04:54.499698-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:04:54.499698-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:04:54.499698-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:04:54.500697-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:04:54.500697-0300 | INFO | App started | main.py:28
+2023-02-10T04:04:54.647697-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:04:54.647697-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:04:54.647697-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:04:54.649697-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:04:54.649697-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:32.170639-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:32.170639-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:32.170639-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:32.172638-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:32.172638-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:32.312635-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:32.313636-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:32.313636-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:32.314634-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:32.314634-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:32.454634-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:32.454634-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:32.454634-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:32.455634-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:32.455634-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:32.706637-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:32.707642-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:32.707642-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:32.709638-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:32.709638-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:55.294561-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:55.295529-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:55.295529-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:55.296528-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:55.296528-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:55.546529-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:55.546529-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:55.546529-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:55.547528-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:55.547528-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:55.702546-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:55.702546-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:55.703544-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:55.704544-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:55.704544-0300 | INFO | App started | main.py:28
+2023-02-10T04:07:55.850547-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:07:55.851546-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:07:55.851546-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:07:55.853548-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:07:55.853548-0300 | INFO | App started | main.py:28
+2023-02-10T04:09:29.557217-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:09:29.557217-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:09:29.558218-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:09:29.561224-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:09:29.562218-0300 | INFO | App started | main.py:28
+2023-02-10T04:09:29.910221-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:09:29.911219-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:09:29.912224-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:09:29.914221-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:09:29.915219-0300 | INFO | App started | main.py:28
+2023-02-10T04:09:30.206215-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:09:30.206215-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:09:30.207215-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:09:30.212226-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:09:30.213216-0300 | INFO | App started | main.py:28
+2023-02-10T04:09:30.466217-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T04:09:30.467227-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T04:09:30.469221-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T04:09:30.472219-0300 | INFO | Auth configured | views.py:10
+2023-02-10T04:09:30.473232-0300 | INFO | App started | main.py:28
+2023-02-10T16:26:29.158543-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:26:29.158543-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:26:29.159512-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:26:29.160543-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:26:29.160543-0300 | INFO | App started | main.py:28
+2023-02-10T16:26:29.340517-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:26:29.340517-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:26:29.341517-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:26:29.342512-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:26:29.342512-0300 | INFO | App started | main.py:28
+2023-02-10T16:26:29.479543-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:26:29.479543-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:26:29.480513-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:26:29.482514-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:26:29.482514-0300 | INFO | App started | main.py:28
+2023-02-10T16:26:29.734700-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:26:29.735699-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:26:29.735699-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:26:29.738704-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:26:29.738704-0300 | INFO | App started | main.py:28
+2023-02-10T16:27:32.225216-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:27:32.226214-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:27:32.226214-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:27:32.228217-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:27:32.228217-0300 | INFO | App started | main.py:28
+2023-02-10T16:27:32.431219-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:27:32.432215-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:27:32.433216-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:27:32.435221-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:27:32.436221-0300 | INFO | App started | main.py:28
+2023-02-10T16:27:32.635215-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:27:32.635215-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:27:32.635215-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:27:32.637214-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:27:32.637214-0300 | INFO | App started | main.py:28
+2023-02-10T16:27:32.854218-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:27:32.854218-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:27:32.855217-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:27:32.857217-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:27:32.858224-0300 | INFO | App started | main.py:28
+2023-02-10T16:28:12.956673-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:28:12.957673-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:28:12.957673-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:28:12.958672-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:28:12.958672-0300 | INFO | App started | main.py:28
+2023-02-10T16:28:13.117676-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:28:13.118679-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:28:13.118679-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:28:13.120673-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:28:13.120673-0300 | INFO | App started | main.py:28
+2023-02-10T16:28:13.384674-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:28:13.385673-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:28:13.385673-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:28:13.387676-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:28:13.387676-0300 | INFO | App started | main.py:28
+2023-02-10T16:28:13.560680-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:28:13.560680-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:28:13.560680-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:28:13.562680-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:28:13.562680-0300 | INFO | App started | main.py:28
+2023-02-10T16:29:37.156207-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:29:37.156207-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:29:37.156207-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:29:37.157206-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:29:37.157206-0300 | INFO | App started | main.py:28
+2023-02-10T16:29:37.291207-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:29:37.292207-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:29:37.292207-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:29:37.293208-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:29:37.293208-0300 | INFO | App started | main.py:28
+2023-02-10T16:29:37.419261-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:29:37.419261-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:29:37.419261-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:29:37.420258-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:29:37.420258-0300 | INFO | App started | main.py:28
+2023-02-10T16:29:37.653298-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:29:37.653298-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:29:37.653298-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:29:37.654297-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:29:37.654297-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:04.636037-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:04.636037-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:04.637037-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:04.638038-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:04.638038-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:04.785038-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:04.785038-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:04.785038-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:04.786037-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:04.786037-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:04.924038-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:04.924038-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:04.924038-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:04.926039-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:04.926039-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:05.048043-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:05.048043-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:05.048043-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:05.050038-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:05.050038-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:30.146515-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:30.146515-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:30.147515-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:30.148485-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:30.148485-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:30.274486-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:30.274486-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:30.274486-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:30.276487-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:30.276487-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:30.497307-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:30.497307-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:30.497307-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:30.499304-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:30.499304-0300 | INFO | App started | main.py:28
+2023-02-10T16:30:30.624302-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:30:30.624302-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:30:30.624302-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:30:30.625305-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:30:30.625305-0300 | INFO | App started | main.py:28
+2023-02-10T16:31:04.250531-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:31:04.250531-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:31:04.250531-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:31:04.251530-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:31:04.251530-0300 | INFO | App started | main.py:28
+2023-02-10T16:31:04.424534-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:31:04.424534-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:31:04.424534-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:31:04.425564-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:31:04.425564-0300 | INFO | App started | main.py:28
+2023-02-10T16:31:04.558530-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:31:04.558530-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:31:04.558530-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:31:04.559530-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:31:04.559530-0300 | INFO | App started | main.py:28
+2023-02-10T16:31:04.707534-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:31:04.707534-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:31:04.707534-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:31:04.708531-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:31:04.708531-0300 | INFO | App started | main.py:28
+2023-02-10T16:32:27.106229-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:32:27.106229-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:32:27.106229-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:32:27.107228-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:32:27.107228-0300 | INFO | App started | main.py:28
+2023-02-10T16:32:27.241258-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:32:27.241258-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:32:27.241258-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:32:27.242230-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:32:27.242230-0300 | INFO | App started | main.py:28
+2023-02-10T16:32:27.372229-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:32:27.372229-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:32:27.372229-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:32:27.373228-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:32:27.373228-0300 | INFO | App started | main.py:28
+2023-02-10T16:33:00.523461-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:33:00.523461-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:33:00.523461-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:33:00.524459-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:33:00.524459-0300 | INFO | App started | main.py:28
+2023-02-10T16:33:34.548280-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:33:34.548280-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:33:34.548280-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:33:34.549280-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:33:34.549280-0300 | INFO | App started | main.py:28
+2023-02-10T16:33:34.793279-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:33:34.793279-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:33:34.793279-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:33:34.794280-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:33:34.794280-0300 | INFO | App started | main.py:28
+2023-02-10T16:33:34.932278-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:33:34.932278-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:33:34.932278-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:33:34.933276-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:33:34.933276-0300 | INFO | App started | main.py:28
+2023-02-10T16:34:49.049842-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:34:49.050843-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:34:49.050843-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:34:49.051840-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:34:49.051840-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:02.472498-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:02.472498-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:02.472498-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:02.474496-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:02.474496-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:02.679496-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:02.680493-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:02.680493-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:02.682494-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:02.683495-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:02.974491-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:02.975492-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:02.975492-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:02.977494-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:02.977494-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:03.151491-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:03.152494-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:03.152494-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:03.154493-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:03.154493-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:15.697491-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:15.697491-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:15.698492-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:15.700491-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:15.700491-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:15.869493-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:15.869493-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:15.870492-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:15.871491-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:15.871491-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:16.056491-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:16.057491-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:16.057491-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:16.059491-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:16.059491-0300 | INFO | App started | main.py:28
+2023-02-10T16:35:16.238494-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:35:16.238494-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:35:16.238494-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:35:16.240496-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:35:16.240496-0300 | INFO | App started | main.py:28
+2023-02-10T16:36:14.577264-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:36:14.577264-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:36:14.577264-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:36:14.578270-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:36:14.578270-0300 | INFO | App started | main.py:28
+2023-02-10T16:36:14.730235-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:36:14.730235-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:36:14.730235-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:36:14.731235-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:36:14.732236-0300 | INFO | App started | main.py:28
+2023-02-10T16:36:14.876234-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:36:14.876234-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:36:14.876234-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:36:14.878233-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:36:14.878233-0300 | INFO | App started | main.py:28
+2023-02-10T16:36:15.016234-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:36:15.017236-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:36:15.017236-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:36:15.018235-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:36:15.019240-0300 | INFO | App started | main.py:28
+2023-02-10T16:36:59.820184-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:36:59.820184-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:36:59.820184-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:36:59.822182-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:36:59.822182-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:00.022185-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:00.022185-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:00.022185-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:00.024188-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:00.025186-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:00.221189-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:00.222188-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:00.222188-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:00.224185-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:00.224185-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:00.417185-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:00.418185-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:00.418185-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:00.420189-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:00.420189-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:48.015117-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:48.016118-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:48.016118-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:48.018117-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:48.018117-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:48.305119-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:48.305119-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:48.305119-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:48.307120-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:48.307120-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:48.475118-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:48.475118-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:48.476121-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:48.478116-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:48.478116-0300 | INFO | App started | main.py:28
+2023-02-10T16:37:48.638119-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:37:48.638119-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:37:48.638119-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:37:48.640118-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:37:48.640118-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:15.631866-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:15.631866-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:15.632867-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:15.633866-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:15.633866-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:15.810837-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:15.811840-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:15.811840-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:15.812838-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:15.813838-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:16.070836-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:16.071837-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:16.071837-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:16.072842-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:16.073836-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:16.228838-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:16.228838-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:16.229837-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:16.230835-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:16.230835-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:37.223494-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:37.223494-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:37.223494-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:37.224493-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:37.224493-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:37.348493-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:37.348493-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:37.348493-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:37.349493-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:37.349493-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:37.473492-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:37.473492-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:37.473492-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:37.474491-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:37.474491-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:37.597493-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:37.598493-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:37.598493-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:37.599492-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:37.599492-0300 | INFO | App started | main.py:28
+2023-02-10T16:38:37.720656-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T16:38:37.720656-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T16:38:37.720656-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T16:38:37.721655-0300 | INFO | Auth configured | views.py:10
+2023-02-10T16:38:37.721655-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:17.502145-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:17.502145-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:17.503144-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:17.503144-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:17.504145-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:17.631115-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:17.631115-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:17.632118-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:17.633115-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:17.633115-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:17.754128-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:17.754128-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:17.754128-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:17.756128-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:17.756128-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:17.879128-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:17.879128-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:17.880127-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:17.880127-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:17.881130-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:17.999130-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:17.999130-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:17.999130-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:18.000129-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:18.000129-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:58.788200-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:58.788200-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:58.788200-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:58.789202-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:58.789202-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:59.035828-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:59.035828-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:59.035828-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:59.036829-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:59.037830-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:59.162884-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:59.162884-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:59.162884-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:59.163887-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:59.163887-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:59.288891-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:59.288891-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:59.289888-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:59.290885-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:59.290885-0300 | INFO | App started | main.py:28
+2023-02-10T18:08:59.415968-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:08:59.415968-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:08:59.415968-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:08:59.416968-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:08:59.416968-0300 | INFO | App started | main.py:28
+2023-02-10T18:12:04.658457-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:12:04.658457-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:12:04.658457-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:12:04.659456-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:12:04.659456-0300 | INFO | App started | main.py:28
+2023-02-10T18:12:04.786633-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:12:04.787604-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:12:04.787604-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:12:04.788603-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:12:04.788603-0300 | INFO | App started | main.py:28
+2023-02-10T18:12:05.018124-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:12:05.018124-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:12:05.018124-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:12:05.019124-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:12:05.019124-0300 | INFO | App started | main.py:28
+2023-02-10T18:12:05.147126-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:12:05.147126-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:12:05.147126-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:12:05.148124-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:12:05.148124-0300 | INFO | App started | main.py:28
+2023-02-10T18:12:05.270125-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:12:05.270125-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:12:05.271123-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:12:05.271123-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:12:05.272126-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:05.962380-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:05.962380-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:05.962380-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:05.963380-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:05.963380-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.091386-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.091386-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.091386-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.092383-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.092383-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.213382-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.213382-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.214381-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.215383-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.215383-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.340381-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.341379-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.341379-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.342382-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.342382-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.581494-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.581494-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.581494-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.582494-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.583468-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.719468-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.719468-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.720466-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.721468-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.721468-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:06.857464-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:06.857464-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:06.857464-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:06.859466-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:06.859466-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:07.022463-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:07.022463-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:07.022463-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:07.024464-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:07.024464-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:07.322848-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:07.323862-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:07.323862-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:07.324849-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:07.324849-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:07.448846-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:07.448846-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:07.448846-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:07.449848-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:07.449848-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:35.732545-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:35.732545-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:35.732545-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:35.733544-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:35.733544-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:35.880548-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:35.880548-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:35.880548-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:35.882547-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:35.882547-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.007547-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.008546-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.008546-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.009546-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.009546-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.128545-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.128545-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.129546-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.130545-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.130545-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.252544-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.252544-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.252544-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.253545-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.253545-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.512295-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.512295-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.512295-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.513296-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.514294-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.767407-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.767407-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.767407-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.768407-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.769409-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:36.908405-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:36.908405-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:36.908405-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:36.909405-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:36.909405-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:37.038408-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:37.038408-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:37.038408-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:37.039406-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:37.040407-0300 | INFO | App started | main.py:28
+2023-02-10T18:22:37.165471-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:22:37.166473-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:22:37.166473-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:22:37.167472-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:22:37.167472-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:42.958553-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:42.958553-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:42.959552-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:42.960552-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:42.960552-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:43.138623-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:43.138623-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:43.138623-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:43.140622-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:43.140622-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:43.436833-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:43.436833-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:43.436833-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:43.438833-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:43.439835-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:43.613831-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:43.613831-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:43.614837-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:43.616834-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:43.616834-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:43.811834-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:43.811834-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:43.811834-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:43.814834-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:43.814834-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:43.997833-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:43.997833-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:43.997833-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:43.999832-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:43.999832-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:44.166834-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:44.167834-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:44.167834-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:44.168836-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:44.168836-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:44.370091-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:44.370091-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:44.370091-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:44.372092-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:44.372092-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:44.539093-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:44.539093-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:44.540092-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:44.541092-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:44.541092-0300 | INFO | App started | main.py:28
+2023-02-10T18:25:44.725096-0300 | INFO | Connected in alpha_store_mock with app testing status: True | models.py:46
+2023-02-10T18:25:44.725096-0300 | DEBUG | Database URI: <SQLAlchemy>, postgresql+pg8000://postgres:123@localhost/alpha_store_mock | models.py:47
+2023-02-10T18:25:44.726097-0300 | INFO | Auth models configured | models.py:54
+2023-02-10T18:25:44.727113-0300 | INFO | Auth configured | views.py:10
+2023-02-10T18:25:44.728097-0300 | INFO | App started | main.py:28
