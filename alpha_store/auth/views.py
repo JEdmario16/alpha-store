@@ -159,3 +159,19 @@ def remove_from_cart(product_id):
             "message": "Product not found or not in cart",
             "status_code": 404,
         }, 404
+
+@auth.route("/cart/checkout", methods=["POST"])
+@login_required
+def checkout():
+    try:
+        current_user.checkout()
+        return {
+            "message": "Checkout successfully",
+            "status_code": 200,
+        }, 200
+
+    except ValueError as _:
+        return {
+            "message": "Cart is empty",
+            "status_code": 400,
+        }, 400

@@ -315,3 +315,38 @@ class TestAuth(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             response.json, {"message": "Product removed from cart successfully", "status_code": 200})
+
+    # Checkout tests
+    def test_checkout_without_logged_user(self):
+
+        response = self.client.post("/apis/v1/user/cart/checkout")
+
+        self.assertEqual(response.status_code, 401)
+
+    def test_checkout_with_logged_user_and_empty_cart(self):
+
+        self.mock_login()
+        response = self.client.post("/apis/v1/user/cart/checkout")
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(
+            response.json, {"message": "Cart is empty", "status_code": 400})
+
+    def test_checkout_with_logged_user_and_products_in_cart(self):
+
+        self.mock_login()
+        self.mock_product()
+
+        # add product to cart
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        response = self.client.post("/apis/v1/user/cart/checkout")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json, {"message": "Checkout successfully", "status_code": 200})
+
+        # Verify if the user cart is empty
+        response = self.client.get("/apis/v1/user/cart")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["products"], [])

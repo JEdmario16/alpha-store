@@ -69,6 +69,12 @@ cart_products_association = db.Table(
               db.ForeignKey('products.id'))
 )
 
+order_products_association = db.Table(
+    'order_product', db.Model.metadata,
+    db.Column('order_id', db.Integer, db.ForeignKey('orders.id')),
+    db.Column('product_id', db.Integer, db.ForeignKey('products.id'))
+)
+
 
 class User(db.Model, UserMixin):
 
@@ -83,6 +89,9 @@ class User(db.Model, UserMixin):
 
     # One to one relationship with cart
     cart = db.relationship("Cart", backref="user", uselist=False)
+
+    # One to many relationship with orders
+    orders = db.relationship("Order", backref="user", uselist=True)
 
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
@@ -151,6 +160,20 @@ class User(db.Model, UserMixin):
         self.cart.products.remove(product)
         db.session.commit()
 
+    def checkout(self):
+
+        if not self.cart:
+            raise ValueError("Cart is empty")
+
+        order = Order(user_id=self.id)
+        order.save()
+
+        for product in self.cart.products:
+            order.products.append(product)
+
+        db.session.delete(self.cart)
+        db.session.commit()
+
     @classmethod
     def get_user_by_email(cls, email: str) -> Optional["User"]:
         return cls.query.filter_by(email=email).first()
@@ -217,3 +240,21 @@ class Products(db.Model):
     def save(self):
         db.session.add(self)
         db.session.commit()
+
+
+class Order(db.Model):
+
+    __tablename__ = "orders"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    added_at = db.Column(db.DateTime, default=db.func.now())
+    products = db.relationship(
+        "Products", secondary=order_products_association, backref="orders")
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def __repr__(self) -> str:
+        return f"<Order user_id={self.user_id}>"
