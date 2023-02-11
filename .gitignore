@@ -1,7 +1,6 @@
 env/
 *.ipynb
 __pycache__/
-config.ini
 *.log
 .vscode/
 *.pyc

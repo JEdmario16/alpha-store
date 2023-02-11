@@ -20,7 +20,15 @@
 <span>
 Além disso, recomenda-se fortemente o uso do gerenciador de pacotes ``poetry`` para a instalação das dependências.
 
-Feita essas observações, o leitor deverá começar clonando <a href="https://github.com/JEdmario16/alpha-store">repositório do projeto</a> em uma pasta de trabalho.
+Feita essas observações, o leitor deverá começar clonando <a href="https://github.com/JEdmario16/alpha-store">repositório do projeto</a> em uma pasta de trabalho. <br>
+Para isto, basta digitar ``git clone https://github.com/JEdmario16/alpha-store`` no terminal, o que criará o diretório ``alpha_store`` contendo os arquivos deste projeto.
+</span>
+
+### Passo 2: Setup
+<span>
+Caso seu gerenciador de pacotes seja o poetry, você pode criar e ativar um ambiente virtual digitando ``poetry shell`` e instalar todas as dependências do projeto utilizando ``poetry install``. No arquivo ``pyproject.toml`` é possível vizualizar todas as dependências que serão instaladas.
+
+Antes de rodar o projeto, precisamos setar algumas configurações iniciais. 
 </span>
 
 
