@@ -4,7 +4,7 @@ from alpha_store.auth.serializer import UserSchema
 from alpha_store.models import User
 from marshmallow import ValidationError
 
-auth = Blueprint("auth", __name__, url_prefix="/apis/v1/auth")
+auth = Blueprint("auth", __name__, url_prefix="/apis/v1/user")
 
 
 def configure(app: Flask) -> None:
@@ -98,3 +98,64 @@ def logout():
         "message": "Logged out successfully",
         "status_code": 200,
     }, 200
+
+
+@auth.route("/cart/add-to-cart/<int:product_id>", methods=["POST"])
+@login_required
+def add_to_cart(product_id):
+    try:
+        current_user.add_to_cart(product_id)
+        return {
+            "message": "Product added to cart successfully",
+            "status_code": 200,
+        }, 200
+
+    except ValueError as _:
+        return {
+            "message": "Product not found",
+            "status_code": 404,
+        }, 404
+
+
+@auth.route("/cart", methods=["GET"])
+@login_required
+def get_cart():
+
+    user_cart = current_user.get_cart()
+
+    # calculate the total price of the cart
+    total_price = 0
+    shipping_cost = 0
+    for product in user_cart.get("products", []):
+        total_price += product["price"]
+        shipping_cost += 10
+
+    shipping_cost = shipping_cost if shipping_cost <= 250 else 0
+    total_price += shipping_cost
+
+    return {
+        "message": "Cart retrieved successfully",
+        "status_code": 200,
+        "cart_id": user_cart["cart_id"],
+        "products": user_cart["products"],
+        "total_price": total_price,
+        "shipping_cost": shipping_cost,
+        "total_items": len(user_cart["products"]),
+    }, 200
+
+
+@auth.route("/cart/remove-from-cart/<int:product_id>", methods=["POST"])
+@login_required
+def remove_from_cart(product_id):
+    try:
+        current_user.remove_from_cart(product_id)
+        return {
+            "message": "Product removed from cart successfully",
+            "status_code": 200,
+        }, 200
+
+    except ValueError as _:
+        return {
+            "message": "Product not found or not in cart",
+            "status_code": 404,
+        }, 404

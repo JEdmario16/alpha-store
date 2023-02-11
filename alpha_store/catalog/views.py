@@ -114,3 +114,5 @@ def get_all_products():
         "status_code": 200,
         "products": products
     }, 200
+
+

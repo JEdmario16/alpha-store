@@ -4,13 +4,12 @@ import datetime
 from flask_login import current_user
 
 
-
 class TestAuth(TestBase):
 
     def test_index(self):
         """Test if the index route return the correct message"""
 
-        response = self.client.get("/apis/v1/auth/")
+        response = self.client.get("/apis/v1/user/")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             response.json, {"message": "Auth api v1", "status_code":  200})
@@ -29,14 +28,14 @@ class TestAuth(TestBase):
     def test_register_route_wrong_method(self):
         """Test if the register route return the correct message when the method is wrong"""
 
-        response = self.client.get("/apis/v1/auth/register")
+        response = self.client.get("/apis/v1/user/register")
 
         self.assertEqual(response.status_code, 405)
 
     def test_register_route_no_data(self):
         """Test if the register route return the correct message when the method is wrong"""
 
-        response = self.client.post("/apis/v1/auth/register")
+        response = self.client.post("/apis/v1/user/register")
         self.assertEqual(response.status_code, 400)
         self.assertEqual(
             response.json, {"message": "No input data provided", "status_code": 400})
@@ -53,7 +52,7 @@ class TestAuth(TestBase):
 
         expected_message = {
             'message': f"Invalid input data: {expected}", 'status_code': 400}
-        response = self.client.post("/apis/v1/auth/register", json=input)
+        response = self.client.post("/apis/v1/user/register", json=input)
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.json, expected_message)
 
@@ -77,7 +76,7 @@ class TestAuth(TestBase):
 
         expected_message = {
             'message': f"Invalid input data: {expected}", 'status_code': 400}
-        response = self.client.post("/apis/v1/auth/register", json=input)
+        response = self.client.post("/apis/v1/user/register", json=input)
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.json, expected_message)
 
@@ -85,7 +84,7 @@ class TestAuth(TestBase):
 
         input_data = {"username": "validname",
                       "email": "valid@email.com", "password": "validPassword!4"}
-        response = self.client.post("/apis/v1/auth/register", json=input_data)
+        response = self.client.post("/apis/v1/user/register", json=input_data)
         self.assertEqual(response.status_code, 201)
         self.assertEqual(
             response.json, {"message": "User created successfully", "status_code": 201})
@@ -102,7 +101,7 @@ class TestAuth(TestBase):
 
         expected_message = {
             'message': f"Invalid input data: {expected}", 'status_code': 400}
-        response = self.client.post("/apis/v1/auth/register", json=input)
+        response = self.client.post("/apis/v1/user/register", json=input)
         self.assertEqual(response.status_code, 400)
 
     def test_user_dict_method_and_repr(self):
@@ -126,7 +125,7 @@ class TestAuth(TestBase):
     def test_login_route_wrong_method(self):
         """Test if the login route return the correct message when the method is wrong"""
 
-        response = self.client.get("/apis/v1/auth/login")
+        response = self.client.get("/apis/v1/user/login")
 
         self.assertEqual(response.status_code, 405)
 
@@ -140,7 +139,7 @@ class TestAuth(TestBase):
     def test_login_route_missing_field(self, name, input, expected):
         """Test if the login route return the correct message when the method is wrong"""
 
-        response = self.client.post("/apis/v1/auth/login")
+        response = self.client.post("/apis/v1/user/login")
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.json, {
                          "message": "No input data provided or missing required fields", "status_code": 400})
@@ -149,7 +148,7 @@ class TestAuth(TestBase):
         """Test if the login route return the correct message when the user doesn't exist"""
 
         input_data = {"email": "test_user", "password": "ValidPass@12"}
-        response = self.client.post("/apis/v1/auth/login", json=input_data)
+        response = self.client.post("/apis/v1/user/login", json=input_data)
         self.assertEqual(response.status_code, 401)
         self.assertEqual(
             response.json, {"message": "Invalid email or password", "status_code": 401})
@@ -160,7 +159,7 @@ class TestAuth(TestBase):
         self.mock_user()
         input_data = {"email": "testuser@validmail.com",
                       "password": "wrongPassword"}
-        response = self.client.post("/apis/v1/auth/login", json=input_data)
+        response = self.client.post("/apis/v1/user/login", json=input_data)
 
         self.assertEqual(response.status_code, 401)
         self.assertEqual(
@@ -172,7 +171,7 @@ class TestAuth(TestBase):
         self.mock_user()
         input_data = {"email": "testuser@validmail.com",
                       "password": "Testpass12@"}
-        response = self.client.post("/apis/v1/auth/login", json=input_data)
+        response = self.client.post("/apis/v1/user/login", json=input_data)
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["message"], "Logged in successfully")
         self.assertEqual(True, current_user.is_authenticated)
@@ -181,19 +180,138 @@ class TestAuth(TestBase):
     def test_logout_route_wrong_method(self):
         """Test if the logout route return the correct message when the method is wrong"""
 
-        response = self.client.get("/apis/v1/auth/logout")
+        response = self.client.get("/apis/v1/user/logout")
 
         self.assertEqual(response.status_code, 405)
 
     def test_logout_with_no_user_logged_in(self):
         """Test if the logout route return the correct message when the user is not logged in"""
 
-        response = self.client.post("/apis/v1/auth/logout")
+        response = self.client.post("/apis/v1/user/logout")
         self.assertEqual(response.status_code, 401)
 
     def test_logout_with_user_logged_in(self):
         self.mock_login()
-        response = self.client.post("/apis/v1/auth/logout")
+        response = self.client.post("/apis/v1/user/logout")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             response.json, {"message": "Logged out successfully", "status_code": 200})
+
+    # Cart tests
+    def test_add_to_cart_without_user_logged_in(self):
+        """Test if the add to cart route return the correct message when the user is not logged in"""
+
+        response = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+        self.assertEqual(response.status_code, 401)
+
+    def test_add_to_cart_with_user_logged_in(self):
+        self.mock_login()
+        self.mock_product()
+        response = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json, {"message": "Product added to cart successfully", "status_code": 200})
+
+    def test_add_to_cart_with_user_logged_in_and_invalid_product_id(self):
+
+        self.mock_login()
+
+        response = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+        self.assertEqual(response.status_code, 404)
+
+    def test_add_to_cart_duplicate_product(self):
+        self.mock_login()
+        self.mock_product()
+
+        # add product to cart twice
+        # Since we have an earlier test that checks if the product is added to cart successfully
+        # we can assume that the first request will be successful
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+        response = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json, {"message": "Product added to cart successfully", "status_code": 200})
+
+    def test_add_to_cart_same_product_different_user(self):
+        self.mock_login()
+        self.mock_product()
+
+        # add to cart with user 1
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        # logout
+        _ = self.client.post("/apis/v1/user/logout")
+
+        # login with user 2
+        self.mock_login(username="test_user_2",
+                        email="teste2@validmail.com", password="Testpass12@")
+
+        response = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json, {"message": "Product added to cart successfully", "status_code": 200})
+
+    def test_get_cart_without_user_logged_in(self):
+        """Test if the get cart route return the correct message when the user is not logged in"""
+
+        response = self.client.get("/apis/v1/user/cart")
+        self.assertEqual(response.status_code, 401)
+
+    def test_get_cart_with_user_logged_in_and_empty_cart(self):
+
+        self.mock_login()
+        response = self.client.get("/apis/v1/user/cart")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["products"], [])
+        self.assertEqual(response.json["total_items"], 0)
+        self.assertEqual(response.json["total_price"], 0)
+
+    def test_get_cart_with_user_logged_in_and_products_in_cart(self):
+
+        self.mock_login()
+        self.mock_product()
+
+        # add product to cart
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        response = self.client.get("/apis/v1/user/cart")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["total_items"], 1)
+        self.assertEqual(
+            response.json["total_price"], self.mock_product_data["price"] + 10)
+        self.assertEqual(response.json["products"][0]["id"], 1)
+
+    def test_remove_from_cart_without_user_logged_in(self):
+        """Test if the remove from cart route return the correct message when the user is not logged in"""
+
+        response = self.client.post("/apis/v1/user/cart/remove-from-cart/1")
+        self.assertEqual(response.status_code, 401)
+
+    def test_remove_from_cart_with_user_logged_in_and_invalid_product_id(self):
+
+        self.mock_login()
+        response = self.client.post("/apis/v1/user/cart/remove-from-cart/a")
+        self.assertEqual(response.status_code, 404)
+
+    def test_remove_from_cart_with_user_logged_in_and_product_not_in_cart(self):
+
+        self.mock_login()
+        self.mock_product()
+
+        response = self.client.post("/apis/v1/user/cart/remove-from-cart/1")
+        self.assertEqual(response.status_code, 404)
+
+    def test_remove_from_cart_with_user_logged_in_and_product_in_cart(self):
+
+        self.mock_login()
+        self.mock_product()
+
+        # add product to cart
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        response = self.client.post("/apis/v1/user/cart/remove-from-cart/1")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json, {"message": "Product removed from cart successfully", "status_code": 200})

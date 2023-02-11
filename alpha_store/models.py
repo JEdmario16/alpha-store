@@ -65,7 +65,8 @@ def load_user(user_id: Union[int, str]) -> Optional["User"]:
 cart_products_association = db.Table(
     'cart_product', db.Model.metadata,
     db.Column('cart_id', db.Integer, db.ForeignKey('cart.id')),
-    db.Column('product_id', db.Integer, db.ForeignKey('products.id'))
+    db.Column('product_id', db.Integer,
+              db.ForeignKey('products.id'))
 )
 
 
@@ -109,6 +110,46 @@ class User(db.Model, UserMixin):
             "email": self.email,
             "joined_at": self.joined_at
         }
+
+    def add_to_cart(self, product_id: int):
+        product = Products.query.filter_by(id=product_id).first()
+        if not product:
+            raise ValueError("Product not found")
+
+        if not self.cart:
+            self.cart = Cart()
+            self.cart.save()
+
+        self.cart.products.append(product)
+        db.session.commit()
+
+    def get_cart(self) -> dict:
+        if not self.cart:
+            self.cart = Cart()
+            self.cart.save()
+
+        return {
+            "cart_id": self.cart.id,
+            "added_at": self.cart.added_at,
+            "products": [product.to_dict() for product in self.cart.products]
+        }
+
+    def remove_from_cart(self, product_id: int):
+
+        product = Products.query.filter_by(id=product_id).first()
+        if not product:
+            raise ValueError("Product not found")
+
+        if not self.cart:
+            self.cart = Cart()
+            self.cart.save()
+
+        # check if product is in cart
+        if product not in self.cart.products:
+            raise ValueError("Product not in cart")
+
+        self.cart.products.remove(product)
+        db.session.commit()
 
     @classmethod
     def get_user_by_email(cls, email: str) -> Optional["User"]:
