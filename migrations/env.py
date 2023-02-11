@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from alpha_store.auth.models import db
+from alpha_store.models import db
 from alpha_store.tools import load_config
 
 # this is the Alembic Config object, which provides
