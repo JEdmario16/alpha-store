@@ -206,6 +206,7 @@ class User(db.Model, UserMixin):
         db.session.commit()
 
     def get_orders(self) -> list:
+
         return [order.to_dict() for order in self.orders]
 
     @classmethod
