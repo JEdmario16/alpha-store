@@ -6,6 +6,7 @@ from typing import Optional
 
 class TestBase(TestCase):
 
+
     def setUp(self):
 
         self.app = create_app(test_mode=True)
@@ -25,10 +26,11 @@ class TestBase(TestCase):
             "name": "Test Product",
             "description": "Test Product Description",
             "price": 10.00,
-            "stock": 10,
             "score": 100,
             "image_url": "https://test.com/image.png",
-            "id": 1
+            "id": 1,
+            "category": "Test Category",
+            "release_date": "2017-10-27T03:00:00.000Z",
         }
 
     def tearDown(self) -> None:
@@ -61,20 +63,21 @@ class TestBase(TestCase):
             username=username, email=email, password=password)
 
         input_data = {"email": user.email, "password": password}
-        response = self.client.post("/apis/v1/user/login", json=input_data)
-        return
+        _ = self.client.post("/apis/v1/user/login", json=input_data)
+    
 
-    def mock_product(self, name: Optional[str] = None, description: Optional[str] = None, price: Optional[float] = None, stock: Optional[int] = None, score: Optional[int] = None, image_url: Optional[str] = None) -> Products:
+    def mock_product(self, name: Optional[str] = None, description: Optional[str] = None, price: Optional[float] = None, score: Optional[int] = None, image_url: Optional[str] = None, category: Optional[str] = None, release_date: Optional[str] = None) -> Products:
         """Mock a product for testing purposes. If no data is provided, it will use the ``self.mock_product_data``"""
 
         name = name or self.mock_product_data["name"]
         description = description or self.mock_product_data["description"]
         price = price or self.mock_product_data["price"]
-        stock = stock or self.mock_product_data["stock"]
         score = score or self.mock_product_data["score"]
         image_url = image_url or self.mock_product_data["image_url"]
+        category = category or self.mock_product_data["category"]
+        release_date = release_date or self.mock_product_data["release_date"]
 
         product = Products(name=name, description=description,
-                           price=price, stock=stock, score=score, image_url=image_url)
+                           price=price, score=score, image_url=image_url, category=category, release_date=release_date)
         product.save()
         return product

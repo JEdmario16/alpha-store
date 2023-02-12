@@ -17,7 +17,7 @@ class UserSchema(Schema):
         usr = User.get_user_by_email(email)
 
         if usr:
-            raise ValidationError("Email already exists asdas")
+            raise ValidationError("Email already exists")
 
     @validates("username")
     def validate_username(self, username, **kwargs):

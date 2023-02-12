@@ -1,5 +1,4 @@
 env/
-*.ipynb
 __pycache__/
 *.log
 .vscode/

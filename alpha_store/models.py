@@ -1,9 +1,10 @@
-from flask_sqlalchemy import SQLAlchemy
 import flask
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin
+from werkzeug.security import generate_password_hash, check_password_hash
+
 from typing import Union, Optional
-from datetime import datetime
+
 
 # db and login manager are initialized here, but they will be configured in the configure function.
 # With this, we can use both without import ``app`` instance, avoiding circular imports
@@ -78,6 +79,11 @@ order_products_association = db.Table(
 
 class User(db.Model, UserMixin):
 
+    """
+    Store the user information
+    All operations that need to be done with the user(like user cart, orders, etc) will be done here 
+    """
+
     __tablename__ = "users"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -121,6 +127,10 @@ class User(db.Model, UserMixin):
         }
 
     def add_to_cart(self, product_id: int):
+        """
+        Search for given product id and add it to the user cart if it exists
+        This method is called by the ``apis/v1/users/cart/add-to-cart`` endpoint
+        """
         product = Products.query.filter_by(id=product_id).first()
         if not product:
             raise ValueError("Product not found")
@@ -165,14 +175,38 @@ class User(db.Model, UserMixin):
         if not self.cart:
             raise ValueError("Cart is empty")
 
-        order = Order(user_id=self.id)
+        order = Order(user_id=self.id, total_price=0, shipping_cost=0)
         order.save()
 
+        total_price = 0
+        shipping_cost = 0
+
         for product in self.cart.products:
+            total_price += product.price
+            shipping_cost += 10
             order.products.append(product)
+
+        order.total_price = total_price
+        order.shipping_cost = shipping_cost if shipping_cost <= 250 else 0
 
         db.session.delete(self.cart)
         db.session.commit()
+
+        # Everything went well, then register the order in ``SalesRecord`` table
+        # This table don't stores any user information, just the product id and price
+        recorded_sales = []
+        for product in order.products:
+            recorded_sales.append(SalesRecord(
+                product_id=product.id,
+                product_price=product.price,
+                product_category=product.category
+            ))
+
+        db.session.bulk_save_objects(recorded_sales)
+        db.session.commit()
+
+    def get_orders(self) -> list:
+        return [order.to_dict() for order in self.orders]
 
     @classmethod
     def get_user_by_email(cls, email: str) -> Optional["User"]:
@@ -217,7 +251,8 @@ class Products(db.Model):
     name = db.Column(db.String(64), nullable=False)
     description = db.Column(db.String(256), nullable=False)
     price = db.Column(db.Float, nullable=False)
-    stock = db.Column(db.Integer, nullable=False)
+    category = db.Column(db.String(64), nullable=False)
+    release_date = db.Column(db.DateTime, nullable=False)
     added_at = db.Column(db.DateTime, default=db.func.now())
     image_url = db.Column(db.String(256), nullable=False)
     score = db.Column(db.Float, nullable=False)
@@ -228,7 +263,8 @@ class Products(db.Model):
             "name": self.name,
             "description": self.description,
             "price": self.price,
-            "stock": self.stock,
+            "category": self.category,
+            "release_date": self.release_date,
             "added_at": self.added_at,
             "image_url": self.image_url,
             "score": self.score
@@ -249,6 +285,9 @@ class Order(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     added_at = db.Column(db.DateTime, default=db.func.now())
+    total_price = db.Column(db.Float, nullable=False)
+    shipping_cost = db.Column(db.Float, nullable=False)
+
     products = db.relationship(
         "Products", secondary=order_products_association, backref="orders")
 
@@ -256,5 +295,48 @@ class Order(db.Model):
         db.session.add(self)
         db.session.commit()
 
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "added_at": self.added_at,
+            "total_price": self.total_price,
+            "shipping_cost": self.shipping_cost,
+            "products": [product.to_dict() for product in self.products]
+        }
+
     def __repr__(self) -> str:
         return f"<Order user_id={self.user_id}>"
+
+
+class SalesRecord(db.Model):
+
+    """
+    This table will record all completes sale in this application and will be used in analytics package
+    It just stores the product id and price, no user information is stored
+    Also, the ``product_id`` is not a foreign key, because the product can be deleted from the database
+    """
+
+    __tablename__ = "sales_record"
+
+    id = db.Column(db.Integer, primary_key=True)
+    product_id = db.Column(db.Integer, nullable=False)
+    product_price = db.Column(db.Float, nullable=False)
+    product_category = db.Column(db.String(64), nullable=True)
+    sale_date = db.Column(db.DateTime, default=db.func.now())
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id,
+            "product_id": self.product_id,
+            "product_price": self.product_price,
+            "product_category": self.product_category,
+            "sale_date": self.sale_date
+        }
+
+    def __repr__(self) -> str:
+        return f"<SalesRecord product_id={self.product_id}>"

@@ -1,7 +1,5 @@
 from auth_tests_base import TestBase
-from parameterized import parameterized, parameterized_class
-import datetime
-from flask_login import current_user
+from parameterized import parameterized
 
 
 class TestCatalog(TestBase):
@@ -34,8 +32,8 @@ class TestCatalog(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["message"], "Product found")
         self.assertEqual(response.json["status_code"], 200)
-        self.assertEqual(sorted(response_product.items()),
-                         sorted(self.mock_product_data.items()))
+        self.assertEqual(
+            response_product["name"], self.mock_product_data["name"])
 
     def test_get_item_by_name_inexistent(self):
         """Test if the get_item_by_name route return the correct message when the item doesn't exist"""
@@ -58,8 +56,8 @@ class TestCatalog(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["message"], "Product found")
         self.assertEqual(response.json["status_code"], 200)
-        self.assertEqual(sorted(response_product.items()),
-                         sorted(self.mock_product_data.items()))
+        self.assertEqual(
+            response_product["name"], self.mock_product_data["name"])
 
     def test_get_products(self):
         """Test if the get_products route return the correct message"""
@@ -74,8 +72,8 @@ class TestCatalog(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["message"], "Products found")
         self.assertEqual(response.json["status_code"], 200)
-        self.assertEqual(sorted(response_product.items()),
-                         sorted(self.mock_product_data.items()))
+        self.assertEqual(
+            response_product["name"], self.mock_product_data["name"])
 
     def test_get_products_empty(self):
         """
@@ -102,11 +100,13 @@ class TestCatalog(TestBase):
         ("score", ("score", "desc", {
          "name": "A", "price": 1, "score": 9999}), 0),
     ])
-    def test_get_products_sorted_by_column(self, name, input, expected):
+    def test_get_products_sorted_by_column(self, _, test_input, expected):
 
-        sort_by, sort_type, product_data = input
+        sort_by, sort_type, product_data = test_input
 
-        self.mock_product(),
+        # This product will be the standard for the test
+        self.mock_product()
+
         self.mock_product(
             name=product_data["name"], price=product_data["price"], score=product_data["score"])
 

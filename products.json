@@ -3,54 +3,216 @@
     "name": "Super Mario Odyssey",
     "price": 197.88,
     "score": 100,
-    "image": "super-mario-odyssey.png"
+    "image": "super-mario-odyssey.png",
+    "category": "Casual",
+    "release_date": "2017-10-27T03:00:00.000Z"
   },
   {
     "name": "Call Of Duty Infinite Warfare",
     "price": 49.99,
     "score": 80,
-    "image": "call-of-duty-infinite-warfare.png"
+    "image": "call-of-duty-infinite-warfare.png",
+    "category": "Shooter",
+    "release_date": "2016-11-04T02:00:00.000Z"
   },
   {
     "name": "The Witcher III Wild Hunt",
     "price": 119.5,
     "score": 250,
-    "image": "the-witcher-iii-wild-hunt.png"
+    "image": "the-witcher-iii-wild-hunt.png",
+    "category": "RPG",
+    "release_date": "2015-05-19T03:00:00.000Z"
   },
   {
     "name": "Call Of Duty WWII",
     "price": 249.99,
     "score": 205,
-    "image": "call-of-duty-wwii.png"
+    "image": "call-of-duty-wwii.png",
+    "category": "Shooter",
+    "release_date": "2017-11-03T02:00:00.000Z"
   },
   {
     "name": "Mortal Kombat XL",
     "price": 69.99,
     "score": 150,
-    "image": "mortal-kombat-xl.png"
+    "image": "mortal-kombat-xl.png",
+    "category": "Fighting",
+    "release_date": "2016-03-01T02:00:00.000Z"
   },
   {
     "name": "Shards of Darkness",
     "price": 71.94,
     "score": 400,
-    "image": "shards-of-darkness.png"
+    "image": "shards-of-darkness.png",
+    "category": "RPG",
+    "release_date": "2016-05-24T03:00:00.000Z"
   },
   {
     "name": "Terra Média: Sombras de Mordor",
     "price": 79.99,
     "score": 50,
-    "image": "terra-media-sombras-de-mordor.png"
+    "image": "terra-media-sombras-de-mordor.png",
+    "category": "Action",
+    "release_date": "2014-10-03T03:00:00.000Z"
   },
   {
     "name": "FIFA 18",
     "price": 195.39,
     "score": 325,
-    "image": "fifa-18.png"
+    "image": "fifa-18.png",
+    "category": "Sports",
+    "release_date": "2017-09-29T03:00:00.000Z"
   },
   {
     "name": "Horizon Zero Dawn",
     "price": 115.8,
     "score": 290,
-    "image": "horizon-zero-dawn.png"
+    "image": "horizon-zero-dawn.png",
+    "category": "Action",
+    "release_date": "2017-02-28T02:00:00.000Z"
+  },
+  {
+    "name": "Call of Duty Black Ops III",
+    "price": 52.99,
+    "score": 90,
+    "image": "call-of-duty-black-ops-iii.png",
+    "category": "Shooter",
+    "release_date": "2015-11-06T03:00:00.000Z"
+  },
+  {
+    "name": "Overwatch",
+    "price": 55.99,
+    "score": 130,
+    "image": "overwatch.png",
+    "category": "Shooter",
+    "release_date": "2016-05-23T03:00:00.000Z"
+  },
+  {
+    "name": "Red Dead Redemption II",
+    "price": 119.99,
+    "score": 185,
+    "image": "red-dead-redemption-ii.png",
+    "category": "Action",
+    "release_date": "2018-10-26T03:00:00.000Z"
+  },
+  {
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": 199.99,
+    "score": 250,
+    "image": "the-legend-of-zelda-breath-of-the-wild.png",
+    "category": "Adventure",
+    "release_date": "2017-03-03T03:00:00.000Z"
+  },
+  {
+    "name": "Fortnite",
+    "price": 0,
+    "score": 200,
+    "image": "fortnite.png",
+    "category": "Battle Royale",
+    "release_date": "2017-07-21T03:00:00.000Z"
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "score": 225,
+    "image": "grand-theft-auto-v.png",
+    "category": "Action",
+    "release_date": "2013-09-17T03:00:00.000Z"
+  },
+  {
+    "name": "Minecraft",
+    "price": 26.95,
+    "score": 75,
+    "image": "minecraft.png",
+    "category": "Sandbox",
+    "release_date": "2011-11-18T03:00:00.000Z"
+  },
+  {
+    "name": "Destiny 2",
+    "price": 99.99,
+    "score": 115,
+    "image": "destiny-2.png",
+    "category": "Shooter",
+    "release_date": "2017-09-06T03:00:00.000Z"
+  },
+  {
+    "name": "Tom Clancy's The Division 2",
+    "price": 59.99,
+    "score": 165,
+    "image": "tom-clancy's-the-division-2.png",
+    "category": "Shooter",
+    "release_date": "2019-03-15T03:00:00.000Z"
+  },
+  {
+    "name": "Resident Evil Village",
+    "price": 99.99,
+    "score": 425,
+    "image": "resident-evil-village.png",
+    "category": "Action",
+    "release_date": "2022-05-07T03:00:00.000Z"
+  },
+  {
+    "name": "Genshin Impact",
+    "price": 0,
+    "score": 175,
+    "image": "genshin-impact.png",
+    "category": "RPG",
+    "release_date": "2020-09-28T03:00:00.000Z"
+  },
+  {
+    "name": "Among Us",
+    "price": 5.49,
+    "score": 400,
+    "image": "among-us.png",
+    "category": "Party",
+    "release_date": "2018-06-15T03:00:00.000Z"
+  },
+  {
+    "name": "Hitman 3",
+    "price": 79.99,
+    "score": 325,
+    "image": "hitman-3.png",
+    "category": "Action",
+    "release_date": "2021-01-20T03:00:00.000Z"
+  },
+  {
+    "name": "Cyberpunk 2077",
+    "price": 79.99,
+    "score": 200,
+    "image": "cyberpunk-2077.png",
+    "category": "RPG",
+    "release_date": "2020-12-10T03:00:00.000Z"
+  },
+  {
+    "name": "Spider-Man: Miles Morales",
+    "price": 69.99,
+    "score": 475,
+    "image": "spider-man-miles-morales.png",
+    "category": "Action",
+    "release_date": "2020-11-12T03:00:00.000Z"
+  },
+  {
+    "name": "The Last of Us Part II",
+    "price": 79.99,
+    "score": 500,
+    "image": "the-last-of-us-part-ii.png",
+    "category": "Action",
+    "release_date": "2020-06-19T03:00:00.000Z"
+  },
+  {
+    "name": "Death Stranding",
+    "price": 59.99,
+    "score": 375,
+    "image": "death-stranding.png",
+    "category": "Action",
+    "release_date": "2019-11-08T03:00:00.000Z"
+  },
+  {
+    "name": "Sekiro: Shadows Die Twice",
+    "price": 59.99,
+    "score": 450,
+    "image": "sekiro-shadows-die-twice.png",
+    "category": "Action",
+    "release_date": "2019-03-22T03:00:00.000Z"
   }
 ]

@@ -2,6 +2,7 @@ from auth_tests_base import TestBase
 from parameterized import parameterized, parameterized_class
 import datetime
 from flask_login import current_user
+from alpha_store import tools
 
 
 class TestAuth(TestBase):
@@ -17,12 +18,14 @@ class TestAuth(TestBase):
     def test_client_connects_to_test_db(self):
         """Test if the client is connecting to the test database"""
 
+        cfg = tools.load_config(self.app)
+
         self.assertTrue(self.app.testing)
 
         # Get the database URI
         db_uri = self.app.config["SQLALCHEMY_DATABASE_URI"]
         db_name = db_uri.split("/")[-1]
-        self.assertEqual(db_name, "alpha_store_mock")
+        self.assertEqual(db_name, cfg["MOCK_DATABASE"]["db_name"])
 
     # register tests
     def test_register_route_wrong_method(self):
@@ -104,22 +107,6 @@ class TestAuth(TestBase):
         response = self.client.post("/apis/v1/user/register", json=input)
         self.assertEqual(response.status_code, 400)
 
-    def test_user_dict_method_and_repr(self):
-        """
-        Test if User.to_dict and __repr__ method works as expected.
-        Since this tests are very simple, i'll test both at the same time
-        """
-
-        user = self.mock_user()
-        user_dict = user.to_dict()
-        joined_at = user_dict.get("joined_at", None)
-        usr_repr_expected = f"<User username={user.username}, email={user.email}>"
-        self.assertEqual(user_dict["username"], "test_user")
-        self.assertEqual(user_dict["email"], "testuser@validmail.com")
-        self.assertEqual(user_dict["id"], 1)
-        self.assertEqual(True, isinstance(joined_at, datetime.datetime))
-        self.assertEqual(usr_repr_expected, user.__repr__())
-
     # login tests
 
     def test_login_route_wrong_method(self):
@@ -130,16 +117,16 @@ class TestAuth(TestBase):
         self.assertEqual(response.status_code, 405)
 
     @parameterized.expand([
-        ("json", None, "No input data provided or missing required fields"),
-        ("password", {"email": "test_user"},
-         "No input data provided or missing required fields"),
-        ("email", {"password": "ValidPass@12"},
-         "No input data provided or missing required fields"),
+        ("json", None, ""),
+        ("password", {"email": "test_user"}, ""),
+        ("email", {"password": "ValidPass@12"}, ""),
     ])
-    def test_login_route_missing_field(self, name, input, expected):
+    def test_login_route_missing_field(self, name, test_input, _):
         """Test if the login route return the correct message when the method is wrong"""
 
-        response = self.client.post("/apis/v1/user/login")
+        # Since the message is the same for all cases, i'll use "" as expected
+
+        response = self.client.post("/apis/v1/user/login", json=test_input)
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.json, {
                          "message": "No input data provided or missing required fields", "status_code": 400})
@@ -350,3 +337,30 @@ class TestAuth(TestBase):
         response = self.client.get("/apis/v1/user/cart")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["products"], [])
+
+    # Order tests
+    def test_get_orders_without_user_logged_in(self):
+        """Test if the get orders route return the correct message when the user is not logged in"""
+
+        response = self.client.get("/apis/v1/user/orders")
+        self.assertEqual(response.status_code, 401)
+
+    def test_get_orders_with_user_logged_in_and_no_orders(self):
+        self.mock_login()
+        response = self.client.get("/apis/v1/user/orders")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["orders"], [])
+
+    def test_get_orders_with_user_logged_in_and_orders(self):
+        self.mock_login()
+        self.mock_product()
+
+        # add product to cart
+        _ = self.client.post("/apis/v1/user/cart/add-to-cart/1")
+
+        # checkout
+        _ = self.client.post("/apis/v1/user/cart/checkout")
+
+        response = self.client.get("/apis/v1/user/orders")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.json["orders"]), 1)

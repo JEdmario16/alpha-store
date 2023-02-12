@@ -24,6 +24,30 @@ def index():
 
 @auth.route("/register", methods=["POST"])
 def register():
+    """
+    This endpoint handles the user registration.
+    It's purpose is to process a JSON payload containing the user registration information, validate it, and if successful, persist the user data in the db.
+    The function starts by extracting the JSON data from the request using the request.get_json method. 
+    If no JSON data is provided, the function returns a response with a "No input data provided" error message and a 400 Bad Request status code.
+    Next, the function attempts to load the user data into a UserSchema instance using the user_schema.load method.
+    This will validate the input data, and if successful, create a user instance.
+    If an error occurs during validation, a ValidationError is raised and the first error message is extracted and returned in the response along with a 400 Bad Request status code.
+    Finally, if the user is successfully created, a success message is returned along with a 201 Created status code.
+
+    The expected JSON payload is as follows:
+    {
+        'email': 'valid@supersecretmail.com',
+        'username': 'validusername',
+        'password': 'validpassword'
+    }
+
+    The password is hashed using the werkzeug.security.generate_password_hash method and
+    must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number and one special character.
+
+
+    :return: A JSON response containing the status code and a message
+
+    """
 
     json_data = request.get_json(silent=True)
 
@@ -34,8 +58,7 @@ def register():
         }, 400
 
     try:
-        # Load the data into the schema, validate it and create a user instance
-        # The user schema post load will persist the user in the database and related tables
+
         user_schema = UserSchema()
         user = user_schema.load(json_data)
 
@@ -60,18 +83,32 @@ def register():
 
 @auth.route("/login", methods=["POST"])
 def login():
+    """
+    This endpoint handles the user login. 
+    It loads the JSON data from the request, validates it, and if successful, logs the user in.
+    The email and password are extracted before, and if one of them are not provided,
+    a response with a "No input data provided or missing required fields" error message and a 400 Bad Request status code is returned.
 
+    The ``login_user`` function from Flask-Login is used to log the user in. It saves the user login status in the session.
+    When the user is logged in, the ``current_user`` variable is set to the user instance.
+    Everytime that the user tries to access a protected route, the ``login_required`` decorator will check if the user is logged in.
+
+    The expected JSON payload is as follows:
+    {
+        "email": "supervalid@mail.com",
+        "password": "supervalidpassword"
+    }
+
+    """
     try:
         json_data = request.get_json(silent=True)
-        usr = User.get_user_by_email(json_data["email"])
 
-        if not usr:
-            return {
-                "message": "Invalid email or password",
-                "status_code": 401,
-            }, 401
+        email = json_data["email"]
+        password = json_data["password"]
 
-        if usr and usr.check_password(json_data["password"]):
+        usr = User.get_user_by_email(email)
+
+        if usr and usr.check_password(password):
             login_user(usr)
             return {
                 "message": "Logged in successfully",
@@ -83,7 +120,9 @@ def login():
             "status_code": 401,
         }, 401
 
-    except (KeyError, TypeError) as _:
+    except (KeyError, TypeError) as exc:
+        current_app.logger.debug(
+            f"Input data error with loggin attempt: {exc}")
         return {
             "message": "No input data provided or missing required fields",
             "status_code": 400,
@@ -93,6 +132,11 @@ def login():
 @auth.route("/logout", methods=["POST"])
 @login_required
 def logout():
+    """
+    This endpoint handles the user logout.
+    The logout_user function from Flask-Login is used to log the user out. It clears the user login status in the session.
+    """
+
     logout_user()
     return {
         "message": "Logged out successfully",
@@ -100,26 +144,17 @@ def logout():
     }, 200
 
 
-@auth.route("/cart/add-to-cart/<int:product_id>", methods=["POST"])
-@login_required
-def add_to_cart(product_id):
-    try:
-        current_user.add_to_cart(product_id)
-        return {
-            "message": "Product added to cart successfully",
-            "status_code": 200,
-        }, 200
-
-    except ValueError as _:
-        return {
-            "message": "Product not found",
-            "status_code": 404,
-        }, 404
-
-
 @auth.route("/cart", methods=["GET"])
 @login_required
 def get_cart():
+    """
+    This endpoint handles the user cart retrieval. 
+    It will call ``current_user.get_cart`` method to retrieve the user cart.
+    Also, the shipping_cost and total_price is calculated and returned in the response.
+    Note: The shipping cost is 10 for each product, but if the total shipping cost is greater than or equals to 250, it will be free. 
+
+    :return: A JSON response containing the status code, the cart id, the products, the total price, the shipping cost and the total items
+    """
 
     user_cart = current_user.get_cart()
 
@@ -144,9 +179,35 @@ def get_cart():
     }, 200
 
 
+@auth.route("/cart/add-to-cart/<int:product_id>", methods=["POST"])
+@login_required
+def add_to_cart(product_id):
+    try:
+        current_user.add_to_cart(product_id)
+        return {
+            "message": "Product added to cart successfully",
+            "status_code": 200,
+        }, 200
+
+    # The add_to_cart method will raise an exception if the product is not found
+    except ValueError as _:
+        current_app.logger.debug(
+            f"Product {product_id} not found when attempting to add to cart")
+        return {
+            "message": "Product not found",
+            "status_code": 404,
+        }, 404
+
+
 @auth.route("/cart/remove-from-cart/<int:product_id>", methods=["POST"])
 @login_required
 def remove_from_cart(product_id):
+    """
+    This endpoint handles the product removal from the user cart.
+    It will call ``current_user.remove_from_cart`` method to remove the product from the user cart.
+    If the product is not found or not in the cart, a 404 Not Found status code is returned.
+
+    """
     try:
         current_user.remove_from_cart(product_id)
         return {
@@ -154,15 +215,28 @@ def remove_from_cart(product_id):
             "status_code": 200,
         }, 200
 
-    except ValueError as _:
+    except ValueError as exc:
+        current_app.logger.debug(
+            f"Product {product_id} not found or not in cart when attempting to remove from cart: {exc}")
         return {
             "message": "Product not found or not in cart",
             "status_code": 404,
         }, 404
 
+
 @auth.route("/cart/checkout", methods=["POST"])
 @login_required
 def checkout():
+    """
+    This endpoint handles the user cart checkout.
+    It will call ``current_user.checkout`` method to checkout the user cart.
+    If the cart is empty, a 400 Bad Request status code is returned.
+    All the products in the cart will be removed from the cart and added to the user orders. Also,
+    the shipping_cost and total_price is calculated and returned in the response.
+    At this time, the total_price and shipping_cost are saved in the order table(Different from the cart table,
+    where the shipping_cost and total_price are calculated dynamically).
+    When the checkout is successful, it will be registered in SalesOrder table too, but without any info
+    """
     try:
         current_user.checkout()
         return {
@@ -175,3 +249,29 @@ def checkout():
             "message": "Cart is empty",
             "status_code": 400,
         }, 400
+
+
+@auth.route("/orders", methods=["GET"])
+@login_required
+def get_orders():
+    """
+        Fetches the user orders.
+        It will call ``current_user.get_orders`` method to retrieve the user orders.
+        :return: A JSON response containing the status code, the orders
+    """
+
+    orders = current_user.get_orders()
+
+    return {
+        "message": "Orders retrieved successfully",
+        "status_code": 200,
+        "orders": orders,
+    }, 200
+
+
+@auth.errorhandler(401)
+def unauthorized(error):
+    return {
+        "message": "Unauthorized",
+        "status_code": 401,
+    }, 401
