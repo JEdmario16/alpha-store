@@ -3,10 +3,7 @@
 ## Tabela de Conteúdos
 <ul>
     <li> Guia para rodar o projeto </li>
-    <li> Guia para rodar o projeto </li>
-    <li> Guia para rodar o projeto </li>
-    <li> Guia para rodar o projeto </li>
-    <li> Guia para rodar o projeto </li>
+    <li> Packages e rotas </li>
 </ul>
 <br>
 <hr>
@@ -14,16 +11,26 @@
 ## Guia Para Rodar o projeto
 <p> Esta seção dedica-se a explicar o passo-a-passo necessário para rodar esta aplicação </p>
 
+### Passos Resumidos:
+<ol>
+    <li>Clone o repositório para uma pasta de trabalho</li>
+    <li>No diretório alpha_store/alpha_store procure por config.ini e insira as credenciais de um banco de dados local</li>
+    <li> Faça as migrações rodando ``alembic upgrade head`` </li>
+    <li> Rode a aplicação utilizando __ini__.py, flask run ou waitress-serve </li>
+</ol>
+
+Além disso, foi criado também <a href="https://github.com/JEdmario16/alpha-store/blob/main/playground.ipynb">este notebook</a> que pode ser utilizado para testar as rotas. <br>
+Para loadar os dados de products.json no banco de dado, também desenvolvi ``extra.py```. Basta executar:
+```bash
+python3 extra.py
+```
+
 ### Passo 1: Requisitos Iniciais
-<span>Antes de começar, é importante notar que este projeto foi escrito utilizando Windows e ``waitress`` wsgi. Embora o waitress tenha um comportamento semelhante ao ``gunicorn``, pode ser que haja incompatibilidade de dependência de pacotes caso seja executado em outro OS.</span>
-<br>
 <span>
-Além disso, recomenda-se fortemente o uso do gerenciador de pacotes ``poetry`` para a instalação das dependências.
-
-Feita essas observações, o leitor deverá começar clonando <a href="https://github.com/JEdmario16/alpha-store">repositório do projeto</a> em uma pasta de trabalho. <br>
-Para isto, basta digitar ``git clone https://github.com/JEdmario16/alpha-store`` no terminal, o que criará o diretório ``alpha_store`` contendo os arquivos deste projeto.
+Para rodar este projeto, é necessário utilizar o gerenciador de pacotes ``poetry``.
+Antes de começar, clonde o <a href="https://github.com/JEdmario16/alpha-store">repositório do projeto</a> em uma pasta de trabalho. <br>
+Para isto, basta digitar ``git clone`` https://github.com/JEdmario16/alpha-store`` no terminal, o que criará o diretório ``alpha_store`` contendo os arquivos deste projeto.
 </span>
-
 
 ### Passo 2: Setup
 <span>
@@ -52,22 +59,31 @@ Além disso, em migrations/env é possível passar uma db_uri completa para roda
 #### Modo 1: Rodando em modo de debugging
 Para rodar aplicação em modo debug basta executar no terminal ``py __ini__.py`` (você precisa estar dentro de alpha_store/alpha_store)
 
-#### Modo 2: Rodando a aplicação em um wsgi
+#### Modo 2: Rodando a aplicação sem um wsgi
 Caso tenha problemas com o waitress, você pode também rodar a app utilizando apenas o flask. Para isso, basta executar ``flask run`` no terminal. 
 
 #### Modo 3: Utilizando o waitress
 Caso queira utilizar o waitress para rodar a aplicação, basta ir para alpha_store/ e executar a seguinte linha de comando no terminal:
-``waitress-serve --listen:127.0.0.1:8080 wsgi:app``
+``waitress-serve --listen:127.0.0.1:5000 wsgi:app``
 
+## Rotas da api:
 
-### Passos Resumidos:
+Rotas de Auth package: <br>
+Registro de usuários: ```/apis/v1/user/register``` <br>
+Login de usuários : ```/apis/v1/user/login```</br>
+Oter carrinho: ```/apis/v1/user/cart```<br>
+Adicionar produtos no carrinho: ```/apis/v1/user/cart/add-to-cart/<int product_id>``` <br>
+Remover produtos do carrinho: ```/apis/v1/user/cart/remove-from-cart/<int product_id>``` <br>
+checkout: ```/apis/v1/user/cart/checkout``` <br>
+listar pedidos: ```/apis/v1/user/orders``` <br>
+Logout: ```/apis/v1/user/logout``` <br>
 
-<ol>
-    <li>Clone o repositório para uma pasta de trabalho</li>
-    <li>No diretório alpha_store/alpha_store procure por config.ini e insira as credenciais de um banco de dados local</li>
-    <li> Faça as migrações rodando ``alembic revision --autogenerate -m "first migration`` e ``alembic upgrade head`` </li>
-    <li> Rode a aplicação utilizando um dos modos listados acima.
-</ol>
+Rotas de Catalog Package<br>
+Obter itens(com filtros): ```/apis/v1/catalog/get_products```<br>
 
+Estas rotas estão na aplicação mas não são requisitos(bonus) <br>
 
+Obter produtos por id: ```/apis/v1/catalog/get_products_by_id/<id product_id>``` <br>
+Obter produtos por nome: ```/apis/v1/catalog/get_products_by_name/<str product_name>``` <br>
+Gera report de vendas: ```apis/v1/analytics/report```
 
